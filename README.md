@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# IoT Dashboard Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de Dashboard IoT composto por um backend e um frontend. O backend é implementado com Node.js e Express, enquanto o frontend é implementado com React.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+- Node.js (versão 12 ou superior)
+- npm (versão 6 ou superior)
 
-### `npm start`
+## Configuração do Backend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Navegue até a pasta `backend`:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    ```sh
+    cd backend
+    ```
 
-### `npm test`
+2. Instale as dependências:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```sh
+    npm install
+    ```
 
-### `npm run build`
+3. Inicie o servidor backend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```sh
+    npm start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    O servidor backend estará em execução em `http://localhost:3003`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Configuração do Frontend
 
-### `npm run eject`
+1. Navegue até a pasta `frontend`:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```sh
+    cd ../frontend
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Instale as dependências:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```sh
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Inicie o servidor frontend:
 
-## Learn More
+    ```sh
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    O servidor frontend estará em execução em `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Notas Adicionais
 
-### Code Splitting
+- Certifique-se de que o backend esteja em execução antes de iniciar o frontend para que as chamadas de API funcionem corretamente.
+- Se necessário, configure as variáveis de ambiente no backend para conectar ao banco de dados e outros serviços.
+- A estrutura de diretórios é a seguinte:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```
+    .
+    ├── backend
+    │   ├── node_modules
+    │   ├── src
+    │   ├── package.json
+    │   └── ...
+    ├── frontend
+    │   ├── node_modules
+    │   ├── src
+    │   ├── package.json
+    │   └── ...
+    └── README.md
+    ```
 
-### Analyzing the Bundle Size
+## Tecnologias Utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Backend**: Node.js, Express, Mongoose (para MongoDB)
+- **Frontend**: React, Bootstrap
